@@ -1,0 +1,168 @@
+if game:GetService("CoreGui"):FindFirstChild("Frenzy") then
+	game:GetService("CoreGui").Frenzy:Destroy()
+end
+
+local G2L = {};
+
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[Frenzy]];
+
+G2L["2"] = Instance.new("TextButton", G2L["1"]);
+G2L["2"]["TextWrapped"] = true;
+G2L["2"]["TextStrokeTransparency"] = 0;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["TextColor3"] = Color3.fromRGB(217, 223, 234);
+G2L["2"]["TextSize"] = 25;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 86, 0);
+G2L["2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["2"]["Size"] = UDim2.new(0, 100, 0, 50);
+G2L["2"]["Name"] = [[Freeze]];
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Text"] = [[Freeze]];
+G2L["2"]["Rotation"] = -90;
+G2L["2"]["Position"] = UDim2.new(1, -40, 0.5, -55);
+
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["ZIndex"] = 0;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["3"]["Name"] = [[DropShadowHolder]];
+G2L["3"]["BackgroundTransparency"] = 1;
+
+G2L["4"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["4"]["ZIndex"] = 0;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["4"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["4"]["ImageColor3"] = Color3.fromRGB(0, 86, 0);
+G2L["4"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["4"]["Image"] = [[rbxassetid://6015897843]];
+G2L["4"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Name"] = [[DropShadow]];
+G2L["4"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+G2L["5"] = Instance.new("LocalScript", G2L["2"]);
+
+G2L["6"] = Instance.new("TextButton", G2L["1"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextStrokeTransparency"] = 0;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextColor3"] = Color3.fromRGB(217, 223, 234);
+G2L["6"]["TextSize"] = 25;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(86, 0, 0);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["6"]["Size"] = UDim2.new(0, 100, 0, 50);
+G2L["6"]["Name"] = [[Unfreeze]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Unfreeze]];
+G2L["6"]["Rotation"] = -90;
+G2L["6"]["Position"] = UDim2.new(1, -40, 0.5, 55);
+
+G2L["7"] = Instance.new("Frame", G2L["6"]);
+G2L["7"]["ZIndex"] = 0;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7"]["Name"] = [[DropShadowHolder]];
+G2L["7"]["BackgroundTransparency"] = 1;
+
+G2L["8"] = Instance.new("ImageLabel", G2L["7"]);
+G2L["8"]["ZIndex"] = 0;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["8"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["8"]["ImageColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8"]["Image"] = [[rbxassetid://6015897843]];
+G2L["8"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Name"] = [[DropShadow]];
+G2L["8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+G2L["9"] = Instance.new("LocalScript", G2L["6"]);
+
+G2L["a"] = Instance.new("TextButton", G2L["1"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["TextStrokeTransparency"] = 0;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextColor3"] = Color3.fromRGB(217, 223, 234);
+G2L["a"]["TextSize"] = 25;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 171);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["a"]["Size"] = UDim2.new(0, 100, 0, 50);
+G2L["a"]["Name"] = [[Close]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Destroy]];
+G2L["a"]["Rotation"] = -90;
+G2L["a"]["Position"] = UDim2.new(1, -100, 0.5, 0);
+
+G2L["b"] = Instance.new("Frame", G2L["a"]);
+G2L["b"]["ZIndex"] = 0;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["b"]["Name"] = [[DropShadowHolder]];
+G2L["b"]["BackgroundTransparency"] = 1;
+
+G2L["c"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["c"]["ZIndex"] = 0;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["c"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["c"]["ImageColor3"] = Color3.fromRGB(0, 0, 171);
+G2L["c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["c"]["Image"] = [[rbxassetid://6015897843]];
+G2L["c"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["c"]["BackgroundTransparency"] = 1;
+G2L["c"]["Name"] = [[DropShadow]];
+G2L["c"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+G2L["d"] = Instance.new("LocalScript", G2L["a"]);
+
+local function C_5()
+local script = G2L["5"];
+	local character = game.Players.LocalPlayer.Character
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if character and character:IsA("Model") then
+			for _, part in ipairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.Anchored = not part.Anchored
+				end
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_5);
+
+local function C_9()
+local script = G2L["9"];
+	local character = game.Players.LocalPlayer.Character
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if character and character:IsA("Model") then
+			for _, part in ipairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.Anchored = not part.Anchored
+				end
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_9);
+
+local function C_d()
+local script = G2L["d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end;
+task.spawn(C_d);
+
+return G2L["1"], require;

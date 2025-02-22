@@ -131,7 +131,7 @@ local script = G2L["5"];
 		if character and character:IsA("Model") then
 			for _, part in ipairs(character:GetDescendants()) do
 				if part:IsA("BasePart") then
-					part.Anchored = not part.Anchored
+					part.Anchored = true
 				end
 			end
 		end
@@ -148,7 +148,7 @@ local script = G2L["9"];
 		if character and character:IsA("Model") then
 			for _, part in ipairs(character:GetDescendants()) do
 				if part:IsA("BasePart") then
-					part.Anchored = not part.Anchored
+					part.Anchored = false
 				end
 			end
 		end
